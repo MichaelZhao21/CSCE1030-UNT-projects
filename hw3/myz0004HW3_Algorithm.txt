@@ -1,0 +1,88 @@
+----Algorithm----
+1. Declare a global enum, Colony, that holds all of the names of the colonies (A-J), where A is 0, B is 1, etc.
+2. Declare a constant integer for the size of the colonies
+3. Create function prototypes!
+4. Main Function:
+	1. Print out the standard header
+	2. Declare a 2D array, levels, to hold the pheromone levels
+	3. Declare an array, visited, to hold the visited colonies and set every value to 0
+	4. Run the getLevels function to fill the levels matrix
+	5. Print out the description and the randomly generated matrix
+	6. Set the first index of visited to 0, to represent that colony A has been visited
+	7. Loop and run the getLowestLevel function to find the lowest level in the row given until all colonies have been visited
+	8. Run the printVisited function to print out the formatted visited colonies
+5. getLevels:
+	1. Seed the random function to the current time
+	2. Loop through all of the values of the matrix, using a nested for loop
+	3. Check if the column and row number are the same (set to 0 if true)
+	4. Else, generate a random number between [1,20]
+6. printLevels:
+	1. Print out the column titles and lines
+	2. Using a nested for loop, print out the row letter, divider, and values
+7. isVisited:
+	1. Loop through the visited array
+	2. Check if the colony is in the loop and return if it is
+8. getLowestLevel:
+	1. Declare variables for the min and and its index
+	2. Loop through the row
+	3. If the current cell is smaller than the min, store it as the min and the index
+	4. Return the index of the min
+9. printVisited:
+	1. Print out the words
+	2. Loop through the visited array and figure out the colony based on the letter
+	3. Print out that letter and the arrow leading to the next colony
+
+----Test Cases----
+1)
+    A  B  C  D  E  F  G  H  I  J
+   ------------------------------
+A | 00 08 08 14 13 08 03 10 03 17
+B | 19 00 14 12 20 06 03 16 08 06
+C | 05 18 00 13 11 20 17 04 13 09
+D | 04 14 18 00 05 13 05 18 17 04
+E | 13 19 06 09 00 17 11 01 08 17
+F | 15 04 04 12 08 00 13 16 10 12
+G | 12 13 17 13 16 10 00 10 12 15
+H | 06 10 03 01 02 01 06 00 10 09
+I | 16 02 09 04 16 04 19 07 00 11
+J | 11 02 12 15 06 17 11 18 12 00
+
+ The path followed by Anthony is:
+
+A ----> G ----> F ----> B ----> J ----> E ----> H ----> D ----> I ----> C
+
+2)
+    A  B  C  D  E  F  G  H  I  J
+   ------------------------------
+A | 00 18 05 05 15 15 09 16 19 07
+B | 01 00 09 18 20 02 04 01 02 20
+C | 09 19 00 18 12 02 20 07 09 19
+D | 09 20 06 00 07 09 10 11 04 16
+E | 19 19 14 06 00 20 03 03 11 16
+F | 18 11 09 09 12 00 20 07 15 01
+G | 18 01 09 16 09 20 00 01 15 08
+H | 02 17 03 18 16 14 03 00 13 13
+I | 05 07 15 12 16 17 13 05 00 08
+J | 12 03 02 04 20 14 04 08 15 00
+
+ The path followed by Anthony is:
+
+A ----> C ----> F ----> J ----> B ----> H ----> G ----> E ----> D ----> I
+
+3)
+    A  B  C  D  E  F  G  H  I  J
+   ------------------------------
+A | 00 18 05 18 07 14 03 17 10 01
+B | 03 00 16 08 01 20 16 05 18 04
+C | 10 08 00 11 07 14 06 03 06 14
+D | 12 05 20 00 09 02 04 06 20 09
+E | 09 08 18 09 00 10 13 08 02 05
+F | 03 07 02 06 08 00 01 08 06 15
+G | 13 09 20 07 12 16 00 18 20 09
+H | 13 18 01 01 18 08 18 00 06 18
+I | 02 05 11 06 08 17 20 05 00 05
+J | 20 13 10 06 17 10 06 15 01 00
+
+ The path followed by Anthony is:
+
+A ----> J ----> I ----> B ----> E ----> H ----> C ----> G ----> D ----> F

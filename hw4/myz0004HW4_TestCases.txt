@@ -1,0 +1,1425 @@
+     +----------------------------------------------+
+     |       Computer Science and Engineering       |
+     |        CSCE 1030 - Computer Science I        |
+     |  Michael Zhao   myz0004  myz0004@my.unt.edu  |
+     +----------------------------------------------+
+
+           Welcome to Anthony's Battle!
+
+----------------------------------------------------------
+Anthony the ant has decided that he wants to take over all
+the adjacent ant colonies with his army of ants from colo-
+ny 'A'. To do this, Anthony's army will attempt to capture
+ants from columns 'B' through 'J', with at least 1 ant re-
+maining when the column 'J' ant colony is found. Each col-
+umn's ant colony is identified with a 0 in one of the rows
+for that column, while patrols are represented by integers
+between 1 and 10 for the number of ants in that particular
+patrol. On the way to column 'J' if Anthony's army encoun-
+ters a patrol, the number in the patrol is subtracted from
+Anthony's army total. Once his army finds the colony, how-
+ever, any patrols not confronted will be added to his army
+total. If Anthony makes really good decisions, then he can
+take over all of the adjacent ant colonies; otherwise, his
+army will be defeated!
+----------------------------------------------------------
+
+Continue Game? (Y/N): n
+
+Initializing board...
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 ** ** ** ** ** ** ** ** ** |
+ 1| 04 ** ** ** ** ** ** ** ** ** |
+ 2| 04 ** ** ** ** ** ** ** ** ** |
+ 3| 05 ** ** ** ** ** ** ** ** ** |
+ 4| 07 ** ** ** ** ** ** ** ** ** |
+ 5| 02 ** ** ** ** ** ** ** ** ** |
+ 6| 02 ** ** ** ** ** ** ** ** ** |
+ 7| 01 ** ** ** ** ** ** ** ** ** |
+ 8| 06 ** ** ** ** ** ** ** ** ** |
+ 9| 01 ** ** ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Now let's begin... Anthony's army is 33 strong!
+
+Enter row position in column B to strike (10 to save): 0
+
+Anthony's army suffered casualties and has 28 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX ** ** ** ** ** ** ** ** |
+ 1| 04 ** ** ** ** ** ** ** ** ** |
+ 2| 04 ** ** ** ** ** ** ** ** ** |
+ 3| 05 ** ** ** ** ** ** ** ** ** |
+ 4| 07 ** ** ** ** ** ** ** ** ** |
+ 5| 02 ** ** ** ** ** ** ** ** ** |
+ 6| 02 ** ** ** ** ** ** ** ** ** |
+ 7| 01 ** ** ** ** ** ** ** ** ** |
+ 8| 06 ** ** ** ** ** ** ** ** ** |
+ 9| 01 ** ** ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column B to strike (10 to save): 4
+
+Anthony's army suffered casualties and has 19 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX ** ** ** ** ** ** ** ** |
+ 1| 04 ** ** ** ** ** ** ** ** ** |
+ 2| 04 ** ** ** ** ** ** ** ** ** |
+ 3| 05 ** ** ** ** ** ** ** ** ** |
+ 4| 07 XX ** ** ** ** ** ** ** ** |
+ 5| 02 ** ** ** ** ** ** ** ** ** |
+ 6| 02 ** ** ** ** ** ** ** ** ** |
+ 7| 01 ** ** ** ** ** ** ** ** ** |
+ 8| 06 ** ** ** ** ** ** ** ** ** |
+ 9| 01 ** ** ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column B to strike (10 to save): 2
+
+Anthony's army found ant colony in column B, captured 40 ants.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX ** ** ** ** ** ** ** ** |
+ 1| 04 03 ** ** ** ** ** ** ** ** |
+ 2| 04 00 ** ** ** ** ** ** ** ** |
+ 3| 05 10 ** ** ** ** ** ** ** ** |
+ 4| 07 XX ** ** ** ** ** ** ** ** |
+ 5| 02 05 ** ** ** ** ** ** ** ** |
+ 6| 02 08 ** ** ** ** ** ** ** ** |
+ 7| 01 01 ** ** ** ** ** ** ** ** |
+ 8| 06 06 ** ** ** ** ** ** ** ** |
+ 9| 01 07 ** ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column C to strike (10 to save): 6
+
+Anthony's army suffered casualties and has 58 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX ** ** ** ** ** ** ** ** |
+ 1| 04 03 ** ** ** ** ** ** ** ** |
+ 2| 04 00 ** ** ** ** ** ** ** ** |
+ 3| 05 10 ** ** ** ** ** ** ** ** |
+ 4| 07 XX ** ** ** ** ** ** ** ** |
+ 5| 02 05 ** ** ** ** ** ** ** ** |
+ 6| 02 08 XX ** ** ** ** ** ** ** |
+ 7| 01 01 ** ** ** ** ** ** ** ** |
+ 8| 06 06 ** ** ** ** ** ** ** ** |
+ 9| 01 07 ** ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column C to strike (10 to save): 7
+
+Anthony's army suffered casualties and has 54 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX ** ** ** ** ** ** ** ** |
+ 1| 04 03 ** ** ** ** ** ** ** ** |
+ 2| 04 00 ** ** ** ** ** ** ** ** |
+ 3| 05 10 ** ** ** ** ** ** ** ** |
+ 4| 07 XX ** ** ** ** ** ** ** ** |
+ 5| 02 05 ** ** ** ** ** ** ** ** |
+ 6| 02 08 XX ** ** ** ** ** ** ** |
+ 7| 01 01 XX ** ** ** ** ** ** ** |
+ 8| 06 06 ** ** ** ** ** ** ** ** |
+ 9| 01 07 ** ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column C to strike (10 to save): 1
+
+Anthony's army suffered casualties and has 48 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX ** ** ** ** ** ** ** ** |
+ 1| 04 03 XX ** ** ** ** ** ** ** |
+ 2| 04 00 ** ** ** ** ** ** ** ** |
+ 3| 05 10 ** ** ** ** ** ** ** ** |
+ 4| 07 XX ** ** ** ** ** ** ** ** |
+ 5| 02 05 ** ** ** ** ** ** ** ** |
+ 6| 02 08 XX ** ** ** ** ** ** ** |
+ 7| 01 01 XX ** ** ** ** ** ** ** |
+ 8| 06 06 ** ** ** ** ** ** ** ** |
+ 9| 01 07 ** ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column C to strike (10 to save): 0
+
+Anthony's army suffered casualties and has 38 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX ** ** ** ** ** ** ** |
+ 1| 04 03 XX ** ** ** ** ** ** ** |
+ 2| 04 00 ** ** ** ** ** ** ** ** |
+ 3| 05 10 ** ** ** ** ** ** ** ** |
+ 4| 07 XX ** ** ** ** ** ** ** ** |
+ 5| 02 05 ** ** ** ** ** ** ** ** |
+ 6| 02 08 XX ** ** ** ** ** ** ** |
+ 7| 01 01 XX ** ** ** ** ** ** ** |
+ 8| 06 06 ** ** ** ** ** ** ** ** |
+ 9| 01 07 ** ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column C to strike (10 to save): 5
+
+Anthony's army suffered casualties and has 29 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX ** ** ** ** ** ** ** |
+ 1| 04 03 XX ** ** ** ** ** ** ** |
+ 2| 04 00 ** ** ** ** ** ** ** ** |
+ 3| 05 10 ** ** ** ** ** ** ** ** |
+ 4| 07 XX ** ** ** ** ** ** ** ** |
+ 5| 02 05 XX ** ** ** ** ** ** ** |
+ 6| 02 08 XX ** ** ** ** ** ** ** |
+ 7| 01 01 XX ** ** ** ** ** ** ** |
+ 8| 06 06 ** ** ** ** ** ** ** ** |
+ 9| 01 07 ** ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column C to strike (10 to save): 9
+
+Anthony's army found ant colony in column C, captured 25 ants.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX ** ** ** ** ** ** ** |
+ 1| 04 03 XX ** ** ** ** ** ** ** |
+ 2| 04 00 08 ** ** ** ** ** ** ** |
+ 3| 05 10 04 ** ** ** ** ** ** ** |
+ 4| 07 XX 08 ** ** ** ** ** ** ** |
+ 5| 02 05 XX ** ** ** ** ** ** ** |
+ 6| 02 08 XX ** ** ** ** ** ** ** |
+ 7| 01 01 XX ** ** ** ** ** ** ** |
+ 8| 06 06 05 ** ** ** ** ** ** ** |
+ 9| 01 07 00 ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column D to strike (10 to save): 6
+
+Anthony's army suffered casualties and has 48 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX ** ** ** ** ** ** ** |
+ 1| 04 03 XX ** ** ** ** ** ** ** |
+ 2| 04 00 08 ** ** ** ** ** ** ** |
+ 3| 05 10 04 ** ** ** ** ** ** ** |
+ 4| 07 XX 08 ** ** ** ** ** ** ** |
+ 5| 02 05 XX ** ** ** ** ** ** ** |
+ 6| 02 08 XX XX ** ** ** ** ** ** |
+ 7| 01 01 XX ** ** ** ** ** ** ** |
+ 8| 06 06 05 ** ** ** ** ** ** ** |
+ 9| 01 07 00 ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column D to strike (10 to save): 3
+
+Anthony's army suffered casualties and has 43 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX ** ** ** ** ** ** ** |
+ 1| 04 03 XX ** ** ** ** ** ** ** |
+ 2| 04 00 08 ** ** ** ** ** ** ** |
+ 3| 05 10 04 XX ** ** ** ** ** ** |
+ 4| 07 XX 08 ** ** ** ** ** ** ** |
+ 5| 02 05 XX ** ** ** ** ** ** ** |
+ 6| 02 08 XX XX ** ** ** ** ** ** |
+ 7| 01 01 XX ** ** ** ** ** ** ** |
+ 8| 06 06 05 ** ** ** ** ** ** ** |
+ 9| 01 07 00 ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column D to strike (10 to save):
+1
+
+Anthony's army found ant colony in column D, captured 36 ants.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 ** ** ** ** ** ** |
+ 1| 04 03 XX 00 ** ** ** ** ** ** |
+ 2| 04 00 08 06 ** ** ** ** ** ** |
+ 3| 05 10 04 XX ** ** ** ** ** ** |
+ 4| 07 XX 08 02 ** ** ** ** ** ** |
+ 5| 02 05 XX 09 ** ** ** ** ** ** |
+ 6| 02 08 XX XX ** ** ** ** ** ** |
+ 7| 01 01 XX 10 ** ** ** ** ** ** |
+ 8| 06 06 05 04 ** ** ** ** ** ** |
+ 9| 01 07 00 03 ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column E to strike (10 to save): 6
+
+Anthony's army suffered casualties and has 77 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 ** ** ** ** ** ** |
+ 1| 04 03 XX 00 ** ** ** ** ** ** |
+ 2| 04 00 08 06 ** ** ** ** ** ** |
+ 3| 05 10 04 XX ** ** ** ** ** ** |
+ 4| 07 XX 08 02 ** ** ** ** ** ** |
+ 5| 02 05 XX 09 ** ** ** ** ** ** |
+ 6| 02 08 XX XX XX ** ** ** ** ** |
+ 7| 01 01 XX 10 ** ** ** ** ** ** |
+ 8| 06 06 05 04 ** ** ** ** ** ** |
+ 9| 01 07 00 03 ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column E to strike (10 to save): 3
+
+Anthony's army suffered casualties and has 74 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 ** ** ** ** ** ** |
+ 1| 04 03 XX 00 ** ** ** ** ** ** |
+ 2| 04 00 08 06 ** ** ** ** ** ** |
+ 3| 05 10 04 XX XX ** ** ** ** ** |
+ 4| 07 XX 08 02 ** ** ** ** ** ** |
+ 5| 02 05 XX 09 ** ** ** ** ** ** |
+ 6| 02 08 XX XX XX ** ** ** ** ** |
+ 7| 01 01 XX 10 ** ** ** ** ** ** |
+ 8| 06 06 05 04 ** ** ** ** ** ** |
+ 9| 01 07 00 03 ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column E to strike (10 to save): 8
+
+Anthony's army found ant colony in column E, captured 42 ants.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 ** ** ** ** ** |
+ 1| 04 03 XX 00 10 ** ** ** ** ** |
+ 2| 04 00 08 06 04 ** ** ** ** ** |
+ 3| 05 10 04 XX XX ** ** ** ** ** |
+ 4| 07 XX 08 02 02 ** ** ** ** ** |
+ 5| 02 05 XX 09 10 ** ** ** ** ** |
+ 6| 02 08 XX XX XX ** ** ** ** ** |
+ 7| 01 01 XX 10 02 ** ** ** ** ** |
+ 8| 06 06 05 04 00 ** ** ** ** ** |
+ 9| 01 07 00 03 04 ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column F to strike (10 to save): 9
+
+Anthony's army found ant colony in column F, captured 42 ants.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 ** ** ** ** |
+ 1| 04 03 XX 00 10 01 ** ** ** ** |
+ 2| 04 00 08 06 04 01 ** ** ** ** |
+ 3| 05 10 04 XX XX 06 ** ** ** ** |
+ 4| 07 XX 08 02 02 09 ** ** ** ** |
+ 5| 02 05 XX 09 10 04 ** ** ** ** |
+ 6| 02 08 XX XX XX 05 ** ** ** ** |
+ 7| 01 01 XX 10 02 05 ** ** ** ** |
+ 8| 06 06 05 04 00 04 ** ** ** ** |
+ 9| 01 07 00 03 04 00 ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column G to strike (10 to save): 4
+
+Anthony's army suffered casualties and has 154 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 ** ** ** ** |
+ 1| 04 03 XX 00 10 01 ** ** ** ** |
+ 2| 04 00 08 06 04 01 ** ** ** ** |
+ 3| 05 10 04 XX XX 06 ** ** ** ** |
+ 4| 07 XX 08 02 02 09 XX ** ** ** |
+ 5| 02 05 XX 09 10 04 ** ** ** ** |
+ 6| 02 08 XX XX XX 05 ** ** ** ** |
+ 7| 01 01 XX 10 02 05 ** ** ** ** |
+ 8| 06 06 05 04 00 04 ** ** ** ** |
+ 9| 01 07 00 03 04 00 ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column G to strike (10 to save): 1
+
+Anthony's army suffered casualties and has 149 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 ** ** ** ** |
+ 1| 04 03 XX 00 10 01 XX ** ** ** |
+ 2| 04 00 08 06 04 01 ** ** ** ** |
+ 3| 05 10 04 XX XX 06 ** ** ** ** |
+ 4| 07 XX 08 02 02 09 XX ** ** ** |
+ 5| 02 05 XX 09 10 04 ** ** ** ** |
+ 6| 02 08 XX XX XX 05 ** ** ** ** |
+ 7| 01 01 XX 10 02 05 ** ** ** ** |
+ 8| 06 06 05 04 00 04 ** ** ** ** |
+ 9| 01 07 00 03 04 00 ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column G to strike (10 to save): 0
+
+Anthony's army suffered casualties and has 145 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 XX ** ** ** |
+ 1| 04 03 XX 00 10 01 XX ** ** ** |
+ 2| 04 00 08 06 04 01 ** ** ** ** |
+ 3| 05 10 04 XX XX 06 ** ** ** ** |
+ 4| 07 XX 08 02 02 09 XX ** ** ** |
+ 5| 02 05 XX 09 10 04 ** ** ** ** |
+ 6| 02 08 XX XX XX 05 ** ** ** ** |
+ 7| 01 01 XX 10 02 05 ** ** ** ** |
+ 8| 06 06 05 04 00 04 ** ** ** ** |
+ 9| 01 07 00 03 04 00 ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column G to strike (10 to save): 6
+
+Anthony's army suffered casualties and has 142 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 XX ** ** ** |
+ 1| 04 03 XX 00 10 01 XX ** ** ** |
+ 2| 04 00 08 06 04 01 ** ** ** ** |
+ 3| 05 10 04 XX XX 06 ** ** ** ** |
+ 4| 07 XX 08 02 02 09 XX ** ** ** |
+ 5| 02 05 XX 09 10 04 ** ** ** ** |
+ 6| 02 08 XX XX XX 05 XX ** ** ** |
+ 7| 01 01 XX 10 02 05 ** ** ** ** |
+ 8| 06 06 05 04 00 04 ** ** ** ** |
+ 9| 01 07 00 03 04 00 ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column G to strike (10 to save): 3
+
+Anthony's army suffered casualties and has 139 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 XX ** ** ** |
+ 1| 04 03 XX 00 10 01 XX ** ** ** |
+ 2| 04 00 08 06 04 01 ** ** ** ** |
+ 3| 05 10 04 XX XX 06 XX ** ** ** |
+ 4| 07 XX 08 02 02 09 XX ** ** ** |
+ 5| 02 05 XX 09 10 04 ** ** ** ** |
+ 6| 02 08 XX XX XX 05 XX ** ** ** |
+ 7| 01 01 XX 10 02 05 ** ** ** ** |
+ 8| 06 06 05 04 00 04 ** ** ** ** |
+ 9| 01 07 00 03 04 00 ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column G to strike (10 to save): 9
+
+Anthony's army suffered casualties and has 131 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 XX ** ** ** |
+ 1| 04 03 XX 00 10 01 XX ** ** ** |
+ 2| 04 00 08 06 04 01 ** ** ** ** |
+ 3| 05 10 04 XX XX 06 XX ** ** ** |
+ 4| 07 XX 08 02 02 09 XX ** ** ** |
+ 5| 02 05 XX 09 10 04 ** ** ** ** |
+ 6| 02 08 XX XX XX 05 XX ** ** ** |
+ 7| 01 01 XX 10 02 05 ** ** ** ** |
+ 8| 06 06 05 04 00 04 ** ** ** ** |
+ 9| 01 07 00 03 04 00 XX ** ** ** |
+  +-------------------------------+
+
+Enter row position in column G to strike (10 to save): 8
+
+Anthony's army suffered casualties and has 121 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 XX ** ** ** |
+ 1| 04 03 XX 00 10 01 XX ** ** ** |
+ 2| 04 00 08 06 04 01 ** ** ** ** |
+ 3| 05 10 04 XX XX 06 XX ** ** ** |
+ 4| 07 XX 08 02 02 09 XX ** ** ** |
+ 5| 02 05 XX 09 10 04 ** ** ** ** |
+ 6| 02 08 XX XX XX 05 XX ** ** ** |
+ 7| 01 01 XX 10 02 05 ** ** ** ** |
+ 8| 06 06 05 04 00 04 XX ** ** ** |
+ 9| 01 07 00 03 04 00 XX ** ** ** |
+  +-------------------------------+
+
+Enter row position in column G to strike (10 to save): 7
+
+Anthony's army suffered casualties and has 111 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 XX ** ** ** |
+ 1| 04 03 XX 00 10 01 XX ** ** ** |
+ 2| 04 00 08 06 04 01 ** ** ** ** |
+ 3| 05 10 04 XX XX 06 XX ** ** ** |
+ 4| 07 XX 08 02 02 09 XX ** ** ** |
+ 5| 02 05 XX 09 10 04 ** ** ** ** |
+ 6| 02 08 XX XX XX 05 XX ** ** ** |
+ 7| 01 01 XX 10 02 05 XX ** ** ** |
+ 8| 06 06 05 04 00 04 XX ** ** ** |
+ 9| 01 07 00 03 04 00 XX ** ** ** |
+  +-------------------------------+
+
+Enter row position in column G to strike (10 to save): 5
+
+Anthony's army suffered casualties and has 110 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 XX ** ** ** |
+ 1| 04 03 XX 00 10 01 XX ** ** ** |
+ 2| 04 00 08 06 04 01 ** ** ** ** |
+ 3| 05 10 04 XX XX 06 XX ** ** ** |
+ 4| 07 XX 08 02 02 09 XX ** ** ** |
+ 5| 02 05 XX 09 10 04 XX ** ** ** |
+ 6| 02 08 XX XX XX 05 XX ** ** ** |
+ 7| 01 01 XX 10 02 05 XX ** ** ** |
+ 8| 06 06 05 04 00 04 XX ** ** ** |
+ 9| 01 07 00 03 04 00 XX ** ** ** |
+  +-------------------------------+
+
+Enter row position in column G to strike (10 to save): 2
+
+Anthony's army found ant colony in column G, captured 0 ants.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 XX ** ** ** |
+ 1| 04 03 XX 00 10 01 XX ** ** ** |
+ 2| 04 00 08 06 04 01 00 ** ** ** |
+ 3| 05 10 04 XX XX 06 XX ** ** ** |
+ 4| 07 XX 08 02 02 09 XX ** ** ** |
+ 5| 02 05 XX 09 10 04 XX ** ** ** |
+ 6| 02 08 XX XX XX 05 XX ** ** ** |
+ 7| 01 01 XX 10 02 05 XX ** ** ** |
+ 8| 06 06 05 04 00 04 XX ** ** ** |
+ 9| 01 07 00 03 04 00 XX ** ** ** |
+  +-------------------------------+
+
+Enter row position in column H to strike (10 to save): 1
+
+Anthony's army suffered casualties and has 109 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 XX ** ** ** |
+ 1| 04 03 XX 00 10 01 XX XX ** ** |
+ 2| 04 00 08 06 04 01 00 ** ** ** |
+ 3| 05 10 04 XX XX 06 XX ** ** ** |
+ 4| 07 XX 08 02 02 09 XX ** ** ** |
+ 5| 02 05 XX 09 10 04 XX ** ** ** |
+ 6| 02 08 XX XX XX 05 XX ** ** ** |
+ 7| 01 01 XX 10 02 05 XX ** ** ** |
+ 8| 06 06 05 04 00 04 XX ** ** ** |
+ 9| 01 07 00 03 04 00 XX ** ** ** |
+  +-------------------------------+
+
+Enter row position in column H to strike (10 to save): 6
+
+Anthony's army suffered casualties and has 105 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 XX ** ** ** |
+ 1| 04 03 XX 00 10 01 XX XX ** ** |
+ 2| 04 00 08 06 04 01 00 ** ** ** |
+ 3| 05 10 04 XX XX 06 XX ** ** ** |
+ 4| 07 XX 08 02 02 09 XX ** ** ** |
+ 5| 02 05 XX 09 10 04 XX ** ** ** |
+ 6| 02 08 XX XX XX 05 XX XX ** ** |
+ 7| 01 01 XX 10 02 05 XX ** ** ** |
+ 8| 06 06 05 04 00 04 XX ** ** ** |
+ 9| 01 07 00 03 04 00 XX ** ** ** |
+  +-------------------------------+
+
+Enter row position in column H to strike (10 to save): 9
+
+Anthony's army suffered casualties and has 99 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 XX ** ** ** |
+ 1| 04 03 XX 00 10 01 XX XX ** ** |
+ 2| 04 00 08 06 04 01 00 ** ** ** |
+ 3| 05 10 04 XX XX 06 XX ** ** ** |
+ 4| 07 XX 08 02 02 09 XX ** ** ** |
+ 5| 02 05 XX 09 10 04 XX ** ** ** |
+ 6| 02 08 XX XX XX 05 XX XX ** ** |
+ 7| 01 01 XX 10 02 05 XX ** ** ** |
+ 8| 06 06 05 04 00 04 XX ** ** ** |
+ 9| 01 07 00 03 04 00 XX XX ** ** |
+  +-------------------------------+
+
+Enter row position in column H to strike (10 to save): 0
+
+Anthony's army suffered casualties and has 90 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 XX XX ** ** |
+ 1| 04 03 XX 00 10 01 XX XX ** ** |
+ 2| 04 00 08 06 04 01 00 ** ** ** |
+ 3| 05 10 04 XX XX 06 XX ** ** ** |
+ 4| 07 XX 08 02 02 09 XX ** ** ** |
+ 5| 02 05 XX 09 10 04 XX ** ** ** |
+ 6| 02 08 XX XX XX 05 XX XX ** ** |
+ 7| 01 01 XX 10 02 05 XX ** ** ** |
+ 8| 06 06 05 04 00 04 XX ** ** ** |
+ 9| 01 07 00 03 04 00 XX XX ** ** |
+  +-------------------------------+
+
+Enter row position in column H to strike (10 to save): 2
+
+Anthony's army suffered casualties and has 82 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 XX XX ** ** |
+ 1| 04 03 XX 00 10 01 XX XX ** ** |
+ 2| 04 00 08 06 04 01 00 XX ** ** |
+ 3| 05 10 04 XX XX 06 XX ** ** ** |
+ 4| 07 XX 08 02 02 09 XX ** ** ** |
+ 5| 02 05 XX 09 10 04 XX ** ** ** |
+ 6| 02 08 XX XX XX 05 XX XX ** ** |
+ 7| 01 01 XX 10 02 05 XX ** ** ** |
+ 8| 06 06 05 04 00 04 XX ** ** ** |
+ 9| 01 07 00 03 04 00 XX XX ** ** |
+  +-------------------------------+
+
+Enter row position in column H to strike (10 to save): 5
+
+Anthony's army suffered casualties and has 81 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 XX XX ** ** |
+ 1| 04 03 XX 00 10 01 XX XX ** ** |
+ 2| 04 00 08 06 04 01 00 XX ** ** |
+ 3| 05 10 04 XX XX 06 XX ** ** ** |
+ 4| 07 XX 08 02 02 09 XX ** ** ** |
+ 5| 02 05 XX 09 10 04 XX XX ** ** |
+ 6| 02 08 XX XX XX 05 XX XX ** ** |
+ 7| 01 01 XX 10 02 05 XX ** ** ** |
+ 8| 06 06 05 04 00 04 XX ** ** ** |
+ 9| 01 07 00 03 04 00 XX XX ** ** |
+  +-------------------------------+
+
+Enter row position in column H to strike (10 to save): 7
+
+Anthony's army suffered casualties and has 74 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 XX XX ** ** |
+ 1| 04 03 XX 00 10 01 XX XX ** ** |
+ 2| 04 00 08 06 04 01 00 XX ** ** |
+ 3| 05 10 04 XX XX 06 XX ** ** ** |
+ 4| 07 XX 08 02 02 09 XX ** ** ** |
+ 5| 02 05 XX 09 10 04 XX XX ** ** |
+ 6| 02 08 XX XX XX 05 XX XX ** ** |
+ 7| 01 01 XX 10 02 05 XX XX ** ** |
+ 8| 06 06 05 04 00 04 XX ** ** ** |
+ 9| 01 07 00 03 04 00 XX XX ** ** |
+  +-------------------------------+
+
+Enter row position in column H to strike (10 to save): 8
+
+Anthony's army suffered casualties and has 65 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 XX XX ** ** |
+ 1| 04 03 XX 00 10 01 XX XX ** ** |
+ 2| 04 00 08 06 04 01 00 XX ** ** |
+ 3| 05 10 04 XX XX 06 XX ** ** ** |
+ 4| 07 XX 08 02 02 09 XX ** ** ** |
+ 5| 02 05 XX 09 10 04 XX XX ** ** |
+ 6| 02 08 XX XX XX 05 XX XX ** ** |
+ 7| 01 01 XX 10 02 05 XX XX ** ** |
+ 8| 06 06 05 04 00 04 XX XX ** ** |
+ 9| 01 07 00 03 04 00 XX XX ** ** |
+  +-------------------------------+
+
+Enter row position in column H to strike (10 to save): 4
+
+Anthony's army found ant colony in column H, captured 6 ants.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 XX XX ** ** |
+ 1| 04 03 XX 00 10 01 XX XX ** ** |
+ 2| 04 00 08 06 04 01 00 XX ** ** |
+ 3| 05 10 04 XX XX 06 XX 06 ** ** |
+ 4| 07 XX 08 02 02 09 XX 00 ** ** |
+ 5| 02 05 XX 09 10 04 XX XX ** ** |
+ 6| 02 08 XX XX XX 05 XX XX ** ** |
+ 7| 01 01 XX 10 02 05 XX XX ** ** |
+ 8| 06 06 05 04 00 04 XX XX ** ** |
+ 9| 01 07 00 03 04 00 XX XX ** ** |
+  +-------------------------------+
+
+Enter row position in column I to strike (10 to save): 5
+
+Anthony's army suffered casualties and has 68 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 XX XX ** ** |
+ 1| 04 03 XX 00 10 01 XX XX ** ** |
+ 2| 04 00 08 06 04 01 00 XX ** ** |
+ 3| 05 10 04 XX XX 06 XX 06 ** ** |
+ 4| 07 XX 08 02 02 09 XX 00 ** ** |
+ 5| 02 05 XX 09 10 04 XX XX XX ** |
+ 6| 02 08 XX XX XX 05 XX XX ** ** |
+ 7| 01 01 XX 10 02 05 XX XX ** ** |
+ 8| 06 06 05 04 00 04 XX XX ** ** |
+ 9| 01 07 00 03 04 00 XX XX ** ** |
+  +-------------------------------+
+
+Enter row position in column I to strike (10 to save): 7
+
+Anthony's army suffered casualties and has 65 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 XX XX ** ** |
+ 1| 04 03 XX 00 10 01 XX XX ** ** |
+ 2| 04 00 08 06 04 01 00 XX ** ** |
+ 3| 05 10 04 XX XX 06 XX 06 ** ** |
+ 4| 07 XX 08 02 02 09 XX 00 ** ** |
+ 5| 02 05 XX 09 10 04 XX XX XX ** |
+ 6| 02 08 XX XX XX 05 XX XX ** ** |
+ 7| 01 01 XX 10 02 05 XX XX XX ** |
+ 8| 06 06 05 04 00 04 XX XX ** ** |
+ 9| 01 07 00 03 04 00 XX XX ** ** |
+  +-------------------------------+
+
+Enter row position in column I to strike (10 to save): 9
+
+Anthony's army suffered casualties and has 57 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 XX XX ** ** |
+ 1| 04 03 XX 00 10 01 XX XX ** ** |
+ 2| 04 00 08 06 04 01 00 XX ** ** |
+ 3| 05 10 04 XX XX 06 XX 06 ** ** |
+ 4| 07 XX 08 02 02 09 XX 00 ** ** |
+ 5| 02 05 XX 09 10 04 XX XX XX ** |
+ 6| 02 08 XX XX XX 05 XX XX ** ** |
+ 7| 01 01 XX 10 02 05 XX XX XX ** |
+ 8| 06 06 05 04 00 04 XX XX ** ** |
+ 9| 01 07 00 03 04 00 XX XX XX ** |
+  +-------------------------------+
+
+Enter row position in column I to strike (10 to save): 0
+
+Anthony's army suffered casualties and has 54 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 XX XX XX ** |
+ 1| 04 03 XX 00 10 01 XX XX ** ** |
+ 2| 04 00 08 06 04 01 00 XX ** ** |
+ 3| 05 10 04 XX XX 06 XX 06 ** ** |
+ 4| 07 XX 08 02 02 09 XX 00 ** ** |
+ 5| 02 05 XX 09 10 04 XX XX XX ** |
+ 6| 02 08 XX XX XX 05 XX XX ** ** |
+ 7| 01 01 XX 10 02 05 XX XX XX ** |
+ 8| 06 06 05 04 00 04 XX XX ** ** |
+ 9| 01 07 00 03 04 00 XX XX XX ** |
+  +-------------------------------+
+
+Enter row position in column I to strike (10 to save): 1
+
+Anthony's army suffered casualties and has 50 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 XX XX XX ** |
+ 1| 04 03 XX 00 10 01 XX XX XX ** |
+ 2| 04 00 08 06 04 01 00 XX ** ** |
+ 3| 05 10 04 XX XX 06 XX 06 ** ** |
+ 4| 07 XX 08 02 02 09 XX 00 ** ** |
+ 5| 02 05 XX 09 10 04 XX XX XX ** |
+ 6| 02 08 XX XX XX 05 XX XX ** ** |
+ 7| 01 01 XX 10 02 05 XX XX XX ** |
+ 8| 06 06 05 04 00 04 XX XX ** ** |
+ 9| 01 07 00 03 04 00 XX XX XX ** |
+  +-------------------------------+
+
+Enter row position in column I to strike (10 to save): 2
+
+Anthony's army suffered casualties and has 40 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 XX XX XX ** |
+ 1| 04 03 XX 00 10 01 XX XX XX ** |
+ 2| 04 00 08 06 04 01 00 XX XX ** |
+ 3| 05 10 04 XX XX 06 XX 06 ** ** |
+ 4| 07 XX 08 02 02 09 XX 00 ** ** |
+ 5| 02 05 XX 09 10 04 XX XX XX ** |
+ 6| 02 08 XX XX XX 05 XX XX ** ** |
+ 7| 01 01 XX 10 02 05 XX XX XX ** |
+ 8| 06 06 05 04 00 04 XX XX ** ** |
+ 9| 01 07 00 03 04 00 XX XX XX ** |
+  +-------------------------------+
+
+Enter row position in column I to strike (10 to save): 3
+
+Anthony's army suffered casualties and has 36 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 XX XX XX ** |
+ 1| 04 03 XX 00 10 01 XX XX XX ** |
+ 2| 04 00 08 06 04 01 00 XX XX ** |
+ 3| 05 10 04 XX XX 06 XX 06 XX ** |
+ 4| 07 XX 08 02 02 09 XX 00 ** ** |
+ 5| 02 05 XX 09 10 04 XX XX XX ** |
+ 6| 02 08 XX XX XX 05 XX XX ** ** |
+ 7| 01 01 XX 10 02 05 XX XX XX ** |
+ 8| 06 06 05 04 00 04 XX XX ** ** |
+ 9| 01 07 00 03 04 00 XX XX XX ** |
+  +-------------------------------+
+
+Enter row position in column I to strike (10 to save): 4
+
+Anthony's army suffered casualties and has 27 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 XX XX XX ** |
+ 1| 04 03 XX 00 10 01 XX XX XX ** |
+ 2| 04 00 08 06 04 01 00 XX XX ** |
+ 3| 05 10 04 XX XX 06 XX 06 XX ** |
+ 4| 07 XX 08 02 02 09 XX 00 XX ** |
+ 5| 02 05 XX 09 10 04 XX XX XX ** |
+ 6| 02 08 XX XX XX 05 XX XX ** ** |
+ 7| 01 01 XX 10 02 05 XX XX XX ** |
+ 8| 06 06 05 04 00 04 XX XX ** ** |
+ 9| 01 07 00 03 04 00 XX XX XX ** |
+  +-------------------------------+
+
+Enter row position in column I to strike (10 to save): 6
+
+Anthony's army suffered casualties and has 24 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 XX XX XX ** |
+ 1| 04 03 XX 00 10 01 XX XX XX ** |
+ 2| 04 00 08 06 04 01 00 XX XX ** |
+ 3| 05 10 04 XX XX 06 XX 06 XX ** |
+ 4| 07 XX 08 02 02 09 XX 00 XX ** |
+ 5| 02 05 XX 09 10 04 XX XX XX ** |
+ 6| 02 08 XX XX XX 05 XX XX XX ** |
+ 7| 01 01 XX 10 02 05 XX XX XX ** |
+ 8| 06 06 05 04 00 04 XX XX ** ** |
+ 9| 01 07 00 03 04 00 XX XX XX ** |
+  +-------------------------------+
+
+Enter row position in column I to strike (10 to save): 8
+
+Anthony's army found ant colony in column I, captured 0 ants.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 XX XX XX ** |
+ 1| 04 03 XX 00 10 01 XX XX XX ** |
+ 2| 04 00 08 06 04 01 00 XX XX ** |
+ 3| 05 10 04 XX XX 06 XX 06 XX ** |
+ 4| 07 XX 08 02 02 09 XX 00 XX ** |
+ 5| 02 05 XX 09 10 04 XX XX XX ** |
+ 6| 02 08 XX XX XX 05 XX XX XX ** |
+ 7| 01 01 XX 10 02 05 XX XX XX ** |
+ 8| 06 06 05 04 00 04 XX XX 00 ** |
+ 9| 01 07 00 03 04 00 XX XX XX ** |
+  +-------------------------------+
+
+Enter row position in column J to strike (10 to save): 0
+
+Anthony's army found ant colony in column J, captured 41 ants.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 01 XX XX 02 10 07 XX XX XX 00 |
+ 1| 04 03 XX 00 10 01 XX XX XX 05 |
+ 2| 04 00 08 06 04 01 00 XX XX 10 |
+ 3| 05 10 04 XX XX 06 XX 06 XX 06 |
+ 4| 07 XX 08 02 02 09 XX 00 XX 07 |
+ 5| 02 05 XX 09 10 04 XX XX XX 02 |
+ 6| 02 08 XX XX XX 05 XX XX XX 06 |
+ 7| 01 01 XX 10 02 05 XX XX XX 01 |
+ 8| 06 06 05 04 00 04 XX XX 00 02 |
+ 9| 01 07 00 03 04 00 XX XX XX 02 |
+  +-------------------------------+
+
+Congratulations! Anthony has taken over all ant colonies with 65 remaining!
+
+     +----------------------------------------------+
+     |       Computer Science and Engineering       |
+     |        CSCE 1030 - Computer Science I        |
+     |  Michael Zhao   myz0004  myz0004@my.unt.edu  |
+     +----------------------------------------------+
+
+           Welcome to Anthony's Battle!
+
+----------------------------------------------------------
+Anthony the ant has decided that he wants to take over all
+the adjacent ant colonies with his army of ants from colo-
+ny 'A'. To do this, Anthony's army will attempt to capture
+ants from columns 'B' through 'J', with at least 1 ant re-
+maining when the column 'J' ant colony is found. Each col-
+umn's ant colony is identified with a 0 in one of the rows
+for that column, while patrols are represented by integers
+between 1 and 10 for the number of ants in that particular
+patrol. On the way to column 'J' if Anthony's army encoun-
+ters a patrol, the number in the patrol is subtracted from
+Anthony's army total. Once his army finds the colony, how-
+ever, any patrols not confronted will be added to his army
+total. If Anthony makes really good decisions, then he can
+take over all of the adjacent ant colonies; otherwise, his
+army will be defeated!
+----------------------------------------------------------
+
+Continue Game? (Y/N): y
+
+ +---------SAVE MENU---------+
+ | Slot 1: 11/27/19 12:50:55 |
+ | Slot 2: 11/26/19 23:03:31 |
+ | Slot 3: EMPTY             |
+ | Slot 4: 11/22/19 13:09:50 |
+ | Slot 5: 11/24/19 23:55:49 |
+ +---------------------------+
+
+Enter a save slot (1-5) or 0 to start new game: 1
+
+Loading save slot 1...
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 06 07 XX ** ** ** ** ** ** ** |
+ 1| 03 XX XX ** ** ** ** ** ** ** |
+ 2| 03 XX XX ** ** ** ** ** ** ** |
+ 3| 07 XX ** ** ** ** ** ** ** ** |
+ 4| 10 XX ** ** ** ** ** ** ** ** |
+ 5| 06 XX ** ** ** ** ** ** ** ** |
+ 6| 09 XX ** ** ** ** ** ** ** ** |
+ 7| 07 00 ** ** ** ** ** ** ** ** |
+ 8| 03 04 XX ** ** ** ** ** ** ** |
+ 9| 04 02 XX ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Now let's begin... Anthony's army is 15 strong!
+
+Enter row position in column C to strike (10 to save): 6
+
+Anthony's army suffered casualties and has 8 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 06 07 XX ** ** ** ** ** ** ** |
+ 1| 03 XX XX ** ** ** ** ** ** ** |
+ 2| 03 XX XX ** ** ** ** ** ** ** |
+ 3| 07 XX ** ** ** ** ** ** ** ** |
+ 4| 10 XX ** ** ** ** ** ** ** ** |
+ 5| 06 XX ** ** ** ** ** ** ** ** |
+ 6| 09 XX XX ** ** ** ** ** ** ** |
+ 7| 07 00 ** ** ** ** ** ** ** ** |
+ 8| 03 04 XX ** ** ** ** ** ** ** |
+ 9| 04 02 XX ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column C to strike (10 to save): 5
+
+Anthony's army found ant colony in column C, captured 20 ants.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 06 07 XX ** ** ** ** ** ** ** |
+ 1| 03 XX XX ** ** ** ** ** ** ** |
+ 2| 03 XX XX ** ** ** ** ** ** ** |
+ 3| 07 XX 07 ** ** ** ** ** ** ** |
+ 4| 10 XX 04 ** ** ** ** ** ** ** |
+ 5| 06 XX 00 ** ** ** ** ** ** ** |
+ 6| 09 XX XX ** ** ** ** ** ** ** |
+ 7| 07 00 09 ** ** ** ** ** ** ** |
+ 8| 03 04 XX ** ** ** ** ** ** ** |
+ 9| 04 02 XX ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column D to strike (10 to save): 4
+
+Anthony's army suffered casualties and has 23 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 06 07 XX ** ** ** ** ** ** ** |
+ 1| 03 XX XX ** ** ** ** ** ** ** |
+ 2| 03 XX XX ** ** ** ** ** ** ** |
+ 3| 07 XX 07 ** ** ** ** ** ** ** |
+ 4| 10 XX 04 XX ** ** ** ** ** ** |
+ 5| 06 XX 00 ** ** ** ** ** ** ** |
+ 6| 09 XX XX ** ** ** ** ** ** ** |
+ 7| 07 00 09 ** ** ** ** ** ** ** |
+ 8| 03 04 XX ** ** ** ** ** ** ** |
+ 9| 04 02 XX ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column D to strike (10 to save): 3
+
+Anthony's army suffered casualties and has 14 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 06 07 XX ** ** ** ** ** ** ** |
+ 1| 03 XX XX ** ** ** ** ** ** ** |
+ 2| 03 XX XX ** ** ** ** ** ** ** |
+ 3| 07 XX 07 XX ** ** ** ** ** ** |
+ 4| 10 XX 04 XX ** ** ** ** ** ** |
+ 5| 06 XX 00 ** ** ** ** ** ** ** |
+ 6| 09 XX XX ** ** ** ** ** ** ** |
+ 7| 07 00 09 ** ** ** ** ** ** ** |
+ 8| 03 04 XX ** ** ** ** ** ** ** |
+ 9| 04 02 XX ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column D to strike (10 to save): 2
+
+Anthony's army suffered casualties and has 8 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 06 07 XX ** ** ** ** ** ** ** |
+ 1| 03 XX XX ** ** ** ** ** ** ** |
+ 2| 03 XX XX XX ** ** ** ** ** ** |
+ 3| 07 XX 07 XX ** ** ** ** ** ** |
+ 4| 10 XX 04 XX ** ** ** ** ** ** |
+ 5| 06 XX 00 ** ** ** ** ** ** ** |
+ 6| 09 XX XX ** ** ** ** ** ** ** |
+ 7| 07 00 09 ** ** ** ** ** ** ** |
+ 8| 03 04 XX ** ** ** ** ** ** ** |
+ 9| 04 02 XX ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column D to strike (10 to save): 1
+
+Anthony's army suffered casualties and has 4 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 06 07 XX ** ** ** ** ** ** ** |
+ 1| 03 XX XX XX ** ** ** ** ** ** |
+ 2| 03 XX XX XX ** ** ** ** ** ** |
+ 3| 07 XX 07 XX ** ** ** ** ** ** |
+ 4| 10 XX 04 XX ** ** ** ** ** ** |
+ 5| 06 XX 00 ** ** ** ** ** ** ** |
+ 6| 09 XX XX ** ** ** ** ** ** ** |
+ 7| 07 00 09 ** ** ** ** ** ** ** |
+ 8| 03 04 XX ** ** ** ** ** ** ** |
+ 9| 04 02 XX ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column D to strike (10 to save): 0
+
+Anthony's army suffered casualties and has -4 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 06 07 XX XX ** ** ** ** ** ** |
+ 1| 03 XX XX XX ** ** ** ** ** ** |
+ 2| 03 XX XX XX ** ** ** ** ** ** |
+ 3| 07 XX 07 XX ** ** ** ** ** ** |
+ 4| 10 XX 04 XX ** ** ** ** ** ** |
+ 5| 06 XX 00 ** ** ** ** ** ** ** |
+ 6| 09 XX XX ** ** ** ** ** ** ** |
+ 7| 07 00 09 ** ** ** ** ** ** ** |
+ 8| 03 04 XX ** ** ** ** ** ** ** |
+ 9| 04 02 XX ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Sorry, but Anthony's army has been defeated before taking over all ant colonies.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 06 07 XX XX 02 08 03 04 03 00 |
+ 1| 03 XX XX XX 05 07 08 06 07 06 |
+ 2| 03 XX XX XX 04 06 03 01 02 01 |
+ 3| 07 XX 07 XX 07 10 08 09 05 02 |
+ 4| 10 XX 04 XX 01 00 03 08 00 09 |
+ 5| 06 XX 00 02 00 09 08 07 10 01 |
+ 6| 09 XX XX 00 06 05 06 00 05 01 |
+ 7| 07 00 09 10 10 09 09 03 07 03 |
+ 8| 03 04 XX 08 05 06 00 04 04 10 |
+ 9| 04 02 XX 03 08 04 07 06 08 02 |
+  +-------------------------------+
+
+     +----------------------------------------------+
+     |       Computer Science and Engineering       |
+     |        CSCE 1030 - Computer Science I        |
+     |  Michael Zhao   myz0004  myz0004@my.unt.edu  |
+     +----------------------------------------------+
+
+           Welcome to Anthony's Battle!
+
+----------------------------------------------------------
+Anthony the ant has decided that he wants to take over all
+the adjacent ant colonies with his army of ants from colo-
+ny 'A'. To do this, Anthony's army will attempt to capture
+ants from columns 'B' through 'J', with at least 1 ant re-
+maining when the column 'J' ant colony is found. Each col-
+umn's ant colony is identified with a 0 in one of the rows
+for that column, while patrols are represented by integers
+between 1 and 10 for the number of ants in that particular
+patrol. On the way to column 'J' if Anthony's army encoun-
+ters a patrol, the number in the patrol is subtracted from
+Anthony's army total. Once his army finds the colony, how-
+ever, any patrols not confronted will be added to his army
+total. If Anthony makes really good decisions, then he can
+take over all of the adjacent ant colonies; otherwise, his
+army will be defeated!
+----------------------------------------------------------
+
+Continue Game? (Y/N): n
+
+Initializing board...
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 03 ** ** ** ** ** ** ** ** ** |
+ 1| 05 ** ** ** ** ** ** ** ** ** |
+ 2| 10 ** ** ** ** ** ** ** ** ** |
+ 3| 08 ** ** ** ** ** ** ** ** ** |
+ 4| 09 ** ** ** ** ** ** ** ** ** |
+ 5| 02 ** ** ** ** ** ** ** ** ** |
+ 6| 07 ** ** ** ** ** ** ** ** ** |
+ 7| 04 ** ** ** ** ** ** ** ** ** |
+ 8| 01 ** ** ** ** ** ** ** ** ** |
+ 9| 06 ** ** ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Now let's begin... Anthony's army is 55 strong!
+
+Enter row position in column B to strike (10 to save): 0
+
+Anthony's army found ant colony in column B, captured 59 ants.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 03 00 ** ** ** ** ** ** ** ** |
+ 1| 05 06 ** ** ** ** ** ** ** ** |
+ 2| 10 04 ** ** ** ** ** ** ** ** |
+ 3| 08 10 ** ** ** ** ** ** ** ** |
+ 4| 09 08 ** ** ** ** ** ** ** ** |
+ 5| 02 09 ** ** ** ** ** ** ** ** |
+ 6| 07 01 ** ** ** ** ** ** ** ** |
+ 7| 04 07 ** ** ** ** ** ** ** ** |
+ 8| 01 08 ** ** ** ** ** ** ** ** |
+ 9| 06 06 ** ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column C to strike (10 to save): 1
+
+Anthony's army suffered casualties and has 107 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 03 00 ** ** ** ** ** ** ** ** |
+ 1| 05 06 XX ** ** ** ** ** ** ** |
+ 2| 10 04 ** ** ** ** ** ** ** ** |
+ 3| 08 10 ** ** ** ** ** ** ** ** |
+ 4| 09 08 ** ** ** ** ** ** ** ** |
+ 5| 02 09 ** ** ** ** ** ** ** ** |
+ 6| 07 01 ** ** ** ** ** ** ** ** |
+ 7| 04 07 ** ** ** ** ** ** ** ** |
+ 8| 01 08 ** ** ** ** ** ** ** ** |
+ 9| 06 06 ** ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column C to strike (10 to save): 2
+
+Anthony's army suffered casualties and has 101 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 03 00 ** ** ** ** ** ** ** ** |
+ 1| 05 06 XX ** ** ** ** ** ** ** |
+ 2| 10 04 XX ** ** ** ** ** ** ** |
+ 3| 08 10 ** ** ** ** ** ** ** ** |
+ 4| 09 08 ** ** ** ** ** ** ** ** |
+ 5| 02 09 ** ** ** ** ** ** ** ** |
+ 6| 07 01 ** ** ** ** ** ** ** ** |
+ 7| 04 07 ** ** ** ** ** ** ** ** |
+ 8| 01 08 ** ** ** ** ** ** ** ** |
+ 9| 06 06 ** ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column C to strike (10 to save): 3
+
+Anthony's army suffered casualties and has 96 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 03 00 ** ** ** ** ** ** ** ** |
+ 1| 05 06 XX ** ** ** ** ** ** ** |
+ 2| 10 04 XX ** ** ** ** ** ** ** |
+ 3| 08 10 XX ** ** ** ** ** ** ** |
+ 4| 09 08 ** ** ** ** ** ** ** ** |
+ 5| 02 09 ** ** ** ** ** ** ** ** |
+ 6| 07 01 ** ** ** ** ** ** ** ** |
+ 7| 04 07 ** ** ** ** ** ** ** ** |
+ 8| 01 08 ** ** ** ** ** ** ** ** |
+ 9| 06 06 ** ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column C to strike (10 to save): 4
+
+Anthony's army suffered casualties and has 95 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 03 00 ** ** ** ** ** ** ** ** |
+ 1| 05 06 XX ** ** ** ** ** ** ** |
+ 2| 10 04 XX ** ** ** ** ** ** ** |
+ 3| 08 10 XX ** ** ** ** ** ** ** |
+ 4| 09 08 XX ** ** ** ** ** ** ** |
+ 5| 02 09 ** ** ** ** ** ** ** ** |
+ 6| 07 01 ** ** ** ** ** ** ** ** |
+ 7| 04 07 ** ** ** ** ** ** ** ** |
+ 8| 01 08 ** ** ** ** ** ** ** ** |
+ 9| 06 06 ** ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column C to strike (10 to save): 5
+
+Anthony's army suffered casualties and has 93 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 03 00 ** ** ** ** ** ** ** ** |
+ 1| 05 06 XX ** ** ** ** ** ** ** |
+ 2| 10 04 XX ** ** ** ** ** ** ** |
+ 3| 08 10 XX ** ** ** ** ** ** ** |
+ 4| 09 08 XX ** ** ** ** ** ** ** |
+ 5| 02 09 XX ** ** ** ** ** ** ** |
+ 6| 07 01 ** ** ** ** ** ** ** ** |
+ 7| 04 07 ** ** ** ** ** ** ** ** |
+ 8| 01 08 ** ** ** ** ** ** ** ** |
+ 9| 06 06 ** ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column C to strike (10 to save): 6
+
+Anthony's army suffered casualties and has 89 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 03 00 ** ** ** ** ** ** ** ** |
+ 1| 05 06 XX ** ** ** ** ** ** ** |
+ 2| 10 04 XX ** ** ** ** ** ** ** |
+ 3| 08 10 XX ** ** ** ** ** ** ** |
+ 4| 09 08 XX ** ** ** ** ** ** ** |
+ 5| 02 09 XX ** ** ** ** ** ** ** |
+ 6| 07 01 XX ** ** ** ** ** ** ** |
+ 7| 04 07 ** ** ** ** ** ** ** ** |
+ 8| 01 08 ** ** ** ** ** ** ** ** |
+ 9| 06 06 ** ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column C to strike (10 to save): 7
+
+Anthony's army found ant colony in column C, captured 11 ants.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 03 00 02 ** ** ** ** ** ** ** |
+ 1| 05 06 XX ** ** ** ** ** ** ** |
+ 2| 10 04 XX ** ** ** ** ** ** ** |
+ 3| 08 10 XX ** ** ** ** ** ** ** |
+ 4| 09 08 XX ** ** ** ** ** ** ** |
+ 5| 02 09 XX ** ** ** ** ** ** ** |
+ 6| 07 01 XX ** ** ** ** ** ** ** |
+ 7| 04 07 00 ** ** ** ** ** ** ** |
+ 8| 01 08 08 ** ** ** ** ** ** ** |
+ 9| 06 06 01 ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column D to strike (10 to save): 8
+
+Anthony's army suffered casualties and has 98 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 03 00 02 ** ** ** ** ** ** ** |
+ 1| 05 06 XX ** ** ** ** ** ** ** |
+ 2| 10 04 XX ** ** ** ** ** ** ** |
+ 3| 08 10 XX ** ** ** ** ** ** ** |
+ 4| 09 08 XX ** ** ** ** ** ** ** |
+ 5| 02 09 XX ** ** ** ** ** ** ** |
+ 6| 07 01 XX ** ** ** ** ** ** ** |
+ 7| 04 07 00 ** ** ** ** ** ** ** |
+ 8| 01 08 08 XX ** ** ** ** ** ** |
+ 9| 06 06 01 ** ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column D to strike (10 to save): 9
+
+Anthony's army suffered casualties and has 89 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 03 00 02 ** ** ** ** ** ** ** |
+ 1| 05 06 XX ** ** ** ** ** ** ** |
+ 2| 10 04 XX ** ** ** ** ** ** ** |
+ 3| 08 10 XX ** ** ** ** ** ** ** |
+ 4| 09 08 XX ** ** ** ** ** ** ** |
+ 5| 02 09 XX ** ** ** ** ** ** ** |
+ 6| 07 01 XX ** ** ** ** ** ** ** |
+ 7| 04 07 00 ** ** ** ** ** ** ** |
+ 8| 01 08 08 XX ** ** ** ** ** ** |
+ 9| 06 06 01 XX ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column D to strike (10 to save): 0
+
+Anthony's army suffered casualties and has 84 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 03 00 02 XX ** ** ** ** ** ** |
+ 1| 05 06 XX ** ** ** ** ** ** ** |
+ 2| 10 04 XX ** ** ** ** ** ** ** |
+ 3| 08 10 XX ** ** ** ** ** ** ** |
+ 4| 09 08 XX ** ** ** ** ** ** ** |
+ 5| 02 09 XX ** ** ** ** ** ** ** |
+ 6| 07 01 XX ** ** ** ** ** ** ** |
+ 7| 04 07 00 ** ** ** ** ** ** ** |
+ 8| 01 08 08 XX ** ** ** ** ** ** |
+ 9| 06 06 01 XX ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column D to strike (10 to save): 1
+
+Anthony's army suffered casualties and has 74 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 03 00 02 XX ** ** ** ** ** ** |
+ 1| 05 06 XX XX ** ** ** ** ** ** |
+ 2| 10 04 XX ** ** ** ** ** ** ** |
+ 3| 08 10 XX ** ** ** ** ** ** ** |
+ 4| 09 08 XX ** ** ** ** ** ** ** |
+ 5| 02 09 XX ** ** ** ** ** ** ** |
+ 6| 07 01 XX ** ** ** ** ** ** ** |
+ 7| 04 07 00 ** ** ** ** ** ** ** |
+ 8| 01 08 08 XX ** ** ** ** ** ** |
+ 9| 06 06 01 XX ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column D to strike (10 to save): 3
+
+Anthony's army suffered casualties and has 65 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 03 00 02 XX ** ** ** ** ** ** |
+ 1| 05 06 XX XX ** ** ** ** ** ** |
+ 2| 10 04 XX ** ** ** ** ** ** ** |
+ 3| 08 10 XX XX ** ** ** ** ** ** |
+ 4| 09 08 XX ** ** ** ** ** ** ** |
+ 5| 02 09 XX ** ** ** ** ** ** ** |
+ 6| 07 01 XX ** ** ** ** ** ** ** |
+ 7| 04 07 00 ** ** ** ** ** ** ** |
+ 8| 01 08 08 XX ** ** ** ** ** ** |
+ 9| 06 06 01 XX ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column D to strike (10 to save): 6
+
+Anthony's army suffered casualties and has 64 ants remaining.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 03 00 02 XX ** ** ** ** ** ** |
+ 1| 05 06 XX XX ** ** ** ** ** ** |
+ 2| 10 04 XX ** ** ** ** ** ** ** |
+ 3| 08 10 XX XX ** ** ** ** ** ** |
+ 4| 09 08 XX ** ** ** ** ** ** ** |
+ 5| 02 09 XX ** ** ** ** ** ** ** |
+ 6| 07 01 XX XX ** ** ** ** ** ** |
+ 7| 04 07 00 ** ** ** ** ** ** ** |
+ 8| 01 08 08 XX ** ** ** ** ** ** |
+ 9| 06 06 01 XX ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column D to strike (10 to save): 8
+
+Ant patrol at this location has already been removed.
+
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 03 00 02 XX ** ** ** ** ** ** |
+ 1| 05 06 XX XX ** ** ** ** ** ** |
+ 2| 10 04 XX ** ** ** ** ** ** ** |
+ 3| 08 10 XX XX ** ** ** ** ** ** |
+ 4| 09 08 XX ** ** ** ** ** ** ** |
+ 5| 02 09 XX ** ** ** ** ** ** ** |
+ 6| 07 01 XX XX ** ** ** ** ** ** |
+ 7| 04 07 00 ** ** ** ** ** ** ** |
+ 8| 01 08 08 XX ** ** ** ** ** ** |
+ 9| 06 06 01 XX ** ** ** ** ** ** |
+  +-------------------------------+
+
+Enter row position in column D to strike (10 to save): 10
+
+ +---------SAVE MENU---------+
+ | Slot 1: 11/27/19 12:50:55 |
+ | Slot 2: 11/26/19 23:03:31 |
+ | Slot 3: EMPTY             |
+ | Slot 4: 11/22/19 13:09:50 |
+ | Slot 5: 11/24/19 23:55:49 |
+ +---------------------------+
+
+Enter slot to save in (1-5) or 0 to cancel save: 2
+
+Are you sure you want to override your save? (Y/N): y
+
+Saved game! Do you want to continue the game? (Y/N): n
+
+Save Slot 2
+----------
+Num Ants: 64
+Game State:
+    A  B  C  D  E  F  G  H  I  J
+  +-------------------------------+
+ 0| 03 00 02 XX ** ** ** ** ** ** |
+ 1| 05 06 XX XX ** ** ** ** ** ** |
+ 2| 10 04 XX ** ** ** ** ** ** ** |
+ 3| 08 10 XX XX ** ** ** ** ** ** |
+ 4| 09 08 XX ** ** ** ** ** ** ** |
+ 5| 02 09 XX ** ** ** ** ** ** ** |
+ 6| 07 01 XX XX ** ** ** ** ** ** |
+ 7| 04 07 00 ** ** ** ** ** ** ** |
+ 8| 01 08 08 XX ** ** ** ** ** ** |
+ 9| 06 06 01 XX ** ** ** ** ** ** |
+  +-------------------------------+
+

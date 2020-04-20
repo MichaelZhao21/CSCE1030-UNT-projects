@@ -1,0 +1,12 @@
+1. Declare variables for height (integer), mass (double), time (double), and velocity (double)
+2. Declare constant value of acceleration due to gravity as 9.8 m/s
+3. Declare constant value of the conversion from feet to meters as 0.3048
+4. Prompt user for the height and read it (using cin)
+5. Prompt user for the weight and read it (using cin)
+6. Calculate the velocity using the formula: v = g * t
+7. Convert the height to meters by multiplying by the conversion constant
+8. Calculate the time using the formula: t = sqrt(2 * (h/g)), g being the acceleration due to gravity constant
+9. Calculate the kinetic energy using the formula: e = .5 * m * pow(v, 2)
+10. Print out the time to 3 decimal places ("The time taken by the object to reach the ground is X seconds.")
+11. Print out the velocity to 2 decimal places ("The velocity at which the object strikes the ground is X meters per second.")
+12. Print out the kinetic energy to 4 decimal places ("The kinetic energy at the moment of impact with the ground is X Joules.")

@@ -1,0 +1,113 @@
+Main:
+1. Print Header
+2. Print Description
+3. Declare 2D pointer matrix, position, currentColumn, numberOfAnts int variables
+4. Declare end, emptyStateFile, loaded bool variables
+5. Declare pointer array to saveStates
+6. Check if save states file exists
+7. If true, check if the player wants to continue the game
+8. If true, print the save menu and ask which save slot they want to load
+9. Load the game data into the declared variables
+10. If the user quits the save menu at any time, start a new game
+11. Checks to see if a save state was loaded, and if not then start a new game
+12. Print the colonies matrix before game starts
+13. Run the main game loop until the game ends
+14. Get the next move from the player
+15. Check to see if the player wants to save and end the game if they want to lol
+16. Check if the move that the player selected is a valid move
+17. Advance the army if the player hits the correct cell
+18. Reprint the matrix
+19. Check for the winning and losing conditions
+20. Free up memory!
+
+void printHeader()
+1. Print header
+
+void printDescription()
+1. Print description
+
+void initColonies(int**& colonies, int& numAnts)
+1. Print initiating message
+2. Seed random generator
+3. Loop through the colonies, initializing the matrix
+4. Set each value to a random num
+5. Set a random cell in each column to 0
+6. Count the number of ants in the first colony
+
+void printColonies(int** colonies, int currCol, bool advanced)
+1. Print out the column letters
+2. Loop through each row and print the numbers
+3. Print out the symbol or number
+4. Print XX if -1, ** if not visited, and a number if past currCol
+5. Also checks to see if it should print the captured cells as yellow if advanced
+6. Close the line and table
+
+void printColonies(int** colonies, int currCol)
+1. Calls the other function, with advanced set as false
+
+void printStart(int numAnts)
+1. Print start message
+
+int getInput(int currCol)
+1. Prompt for user position
+2. Check if it's valid
+3. Return that value
+
+bool isValidStatus(int input, int currCol, int& numAnts, int**& colonies)
+1. Check if it's the correct colony
+2. Check if it's already visited
+3. Else remove the patrol's ants from the army
+
+void advanceArmy(int input, int& currCol, int& numAnts, int**& colonies)
+1. Loops through the column and checks for any unvisited patrols
+2. Print out a message to the user
+3. Increment the number of ants and the current column
+
+void printWin(int numAnts)
+1. Prints winning message
+
+void printLose(int** colonies)
+1. Prints losing message
+
+bool isSaved(SaveState*& states)
+1. Open save file
+2. Checks to see if the file is empty (returns false if empty)
+3. Gets the save states and puts it into the SaveStates array
+4. Close the save file
+
+bool getContinue()
+1. Ask the user if they want to continue the game
+
+void printSaveMenu(SaveState* states)
+1. Prints the save menu
+
+string getDateAndTime(time_t now)
+1. Create a localtime pointer to get the time
+2. Write the time to a stringstream
+
+bool getSaveSlot(int& currCol, int& numAnts, int**& colonies, SaveState* states)
+1. Loops until a valid slot is inputted
+2. Gets the input and checks to see if the slot is a number in the range
+3. Check to see if input = 0 (no save)
+4. Check to see if save slot empty
+5. If a correct slot is selected, open file
+6. Get the currCol and the numAnts, then loop through the colonies array and init + store values
+7. Close file
+
+bool save(int currCol, int numAnts, int** colonies, SaveState* states, bool emptyStateFile)
+1. Loop until a valid input is entered
+2. Check if the user wants to override a written file, if applicable
+3. Write to the states file
+4. Open the output file and overwrite the contents
+5. Check if the player wants to continue the game and return that value
+
+void addToStates(SaveState* states, bool emptySaveFile)
+1. Check for an empty states file and create one if not present
+2. Open the file
+3. Save the info to the file
+4. Close the ofstream
+
+void intInput(int& var, string prompt)
+1. Gets an input and checks if it's an integer
+2. Loops until it gets a valid integer
+3. Also it clears the input stream to avoid an infinite error state
